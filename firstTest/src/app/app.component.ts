@@ -8,7 +8,7 @@ import { ApiService } from './services/api.service';
 })
 export class AppComponent implements OnInit  {
   title = 'firstTest';
-
+  
   constructor(private api: ApiService) {};
   ngOnInit(){
     this.api.getAllCountries().subscribe((res) => console.log(res)); 
